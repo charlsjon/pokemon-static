@@ -97,6 +97,7 @@
 }
 .pokemon-name {
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .type-hp {
@@ -123,7 +124,6 @@
   background-image: url(/assets/img/pokemon-bg.png);
 }
 
-
 .pokemon-image {
   display: flex;
   width: 100%;
@@ -138,6 +138,10 @@
   background: radial-gradient(circle, rgba(255, 217, 7, 1) 0%, rgba(173, 151, 106, 1) 75%); 
   border-left: 4px solid rgba(255, 217, 7, 1);
   border-right: 4px solid rgba(255, 217, 7, 1);
+}
+
+.species {
+  text-transform: capitalize;
 }
 
 .unit {
