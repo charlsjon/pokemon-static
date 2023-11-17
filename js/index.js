@@ -1,3 +1,35 @@
+// async function fetchData() {
+//   const pokemonDataArray = [];
+
+//   for (let i = 1; i <= 100; i++) {
+//     let url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+
+//     try {
+//       let response = await fetch(url);
+
+//       if (!response.ok) {
+//         throw new Error(`HTTP error! Status: ${response.status}`);
+//       }
+
+//       let data = await response.json();
+
+//       // Process or store the data as needed
+//       pokemonDataArray.push(data);
+//     } catch (error) {
+//       console.error(`Error fetching data for Pokemon ${i}:`, error);
+//     }
+//   }
+
+//   // Now, pokemonDataArray contains the data for all 100 Pokémon in the correct order
+//   console.log(pokemonDataArray);
+//   console.log(pokemonDataArray[1].name)
+// }
+
+// // Call the function to start the asynchronous operation
+// fetchData();
+
+
+
 for (let i = 1; i <= 100; i++) {
 
   let url = "https://pokeapi.co/api/v2/pokemon/" + i;
@@ -12,24 +44,31 @@ for (let i = 1; i <= 100; i++) {
       //Get Pokemon Type
       var typeHTML = "";
       var types = resp.types;
-      
+      var eachTypeHTML = "";
+
       types.forEach(type => {
         var pokemonType = type["type"]["name"];
-        console.log(pokemonType);
-        if(pokemonType == "fire"){
-          console.log("Fire")
-          typeHTML +=`
+        var getBackground = document.querySelectorAll('.poke-card');
+        if (pokemonType == "fire") {
+          // console.log("Fire")
+          typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Fire type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+          `+ pokemonType + `
+          `
         }
-        else if (pokemonType == "grass"){
+        else if (pokemonType == "grass") {
           console.log("Grass")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Grass type.ico" alt="">
             </div>
+          `
+          eachTypeHTML += `
+          ` + pokemonType + `
           `
         }
         else if (pokemonType == "water") {
@@ -39,101 +78,140 @@ for (let i = 1; i <= 100; i++) {
               <img src="/assets/img/Water type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+          `+ pokemonType + `
+          `
         }
         else if (pokemonType == "flying") {
-          console.log("Flying")
+          // console.log("Flying")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Flying type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+          ` + pokemonType + `
+          `
         }
         else if (pokemonType == "ghost") {
-          console.log("Ghost")
+          // console.log("Ghost")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Ghost type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+          ` + pokemonType + `
+          `
         }
         else if (pokemonType == "psychic") {
-          console.log("Psychic")
+          // console.log("Psychic")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Psychic type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "poison") {
-          console.log("Poison")
+          // console.log("Poison")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Poison type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "electric") {
-          console.log("Electric")
+          // console.log("Electric")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Electric type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "bug") {
-          console.log("Bug")
+          // console.log("Bug")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Bug type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "rock") {
-          console.log("Rock")
+          // console.log("Rock")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Rock type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "ground") {
-          console.log("Ground")
+          // console.log("Ground")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Ground type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "steel") {
-          console.log("Steel")
+          // console.log("Steel")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Steel type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "fighting") {
-          console.log("Fighting")
+          // console.log("Fighting")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Fighting type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "normal") {
-          console.log("Normal")
+          // console.log("Normal")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Normal type.ico" alt="">
             </div>
           `
+          eachTypeHTML += `
+            `+ pokemonType + `
+          `
         }
         else if (pokemonType == "fairy") {
-          console.log("Fairy")
+          // console.log("Fairy")
           typeHTML += `
             <div class="type-icon">
               <img src="/assets/img/Fairy type.ico" alt="">
             </div>
+          `
+          eachTypeHTML += `
+            `+ pokemonType + `
           `
         }
 
@@ -160,15 +238,15 @@ for (let i = 1; i <= 100; i++) {
 
       var wrapper = document.querySelector('.wrapper');
       wrapper.innerHTML += `
-        <main class="poke-card fire">
+        <main class="poke-card `+ eachTypeHTML + `">
           <section class="section-1">
             <main class="top">
               <div class="poke-name">
                 <p class="pokemon-class">Basic Pokemon</p>
-                <p class="pokemon-name">`+ name +`</p>
+                <p class="pokemon-name">`+ name + `</p>
               </div>
               <div class="type-hp">
-                `+ typeHTML +`
+                `+ typeHTML + `
               </div>
             </main>
             <main class="middle-top">
@@ -176,9 +254,9 @@ for (let i = 1; i <= 100; i++) {
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/`+ i + `.png" alt="" class="pokemon-image">
               </div>
               <div class="stats">
-                <p class="species unit">`+specie+` Pokemon</p>
-                <p class="length unit"> Length: `+heights+` dm,</p>
-                <p class="weight unit">Weight: `+weights+` lbs.</p>
+                <p class="species unit">`+ specie + ` Pokemon</p>
+                <p class="length unit"> Length: `+ heights + ` dm,</p>
+                <p class="weight unit">Weight: `+ weights + ` lbs.</p>
               </div>
             </main>
           </section>
@@ -193,10 +271,10 @@ for (let i = 1; i <= 100; i++) {
             </main>
             <main class="bottom">
               <div class="id">
-                <p class="value">ID: `+id+`</p>
+                <p class="value">ID: `+ id + `</p>
               </div>
               <div class="order">
-                <p class="value">ORDER NO. `+order+`</p>
+                <p class="value">ORDER NO. `+ order + `</p>
               </div>
             </main>
           </section>
@@ -204,3 +282,8 @@ for (let i = 1; i <= 100; i++) {
       `;
     });
 }
+
+window.onscroll = function () { myFunction() };
+
+var navbar = document.querySelector(".navbar");
+var sticky = navbar.offsetTop;

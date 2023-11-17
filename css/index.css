@@ -1,15 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:wght@600&family=Bebas+Neue&family=Inter:wght@200;500&family=Montserrat&family=Open+Sans:wght@300&family=Outfit:wght@200;500&family=Poppins&family=Raleway:wght@100&family=Rubik:wght@300&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
+  ;
   color: #1e0f0f;
 }
 
 .container {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #131B23;
+  position: relative;
+  overflow: auto;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #131b2377;
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  padding-block: 1rem;
+}
+
+.pokemon-logo {
+  display: flex;
+  height: 86px;
+}
+
+.logo {
   display: flex;
 }
 
@@ -20,28 +46,89 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 1rem;
 }
 
 .poke-card {
   width: 285px;
   display: flex;
   flex-direction: column;
-  border: #EDDE7E 12px solid;
-  border-radius: 12px;
+  border: #EDDE7E 14px solid;
+  border-radius: 24px;
 }
 
 .fire {
-  background-image: url(/assets/img/fire-bg.jpg);
+  background-image: url(/assets/img//fire-bg.png);
   background-size: cover;
 }
 
 .grass {
-  background-image: url(/assets/img/grass-bg.jpg);
+  background-image: url(/assets/img/grass-bg.png);
   background-size: cover;
 }
 
 .water {
-  background-image: url(/assets/img/water-bg.jpg);
+  background-image: url(/assets/img/water-bg.png);
+  background-size: cover;
+}
+
+.electric {
+  background-image: url(/assets/img/electric-bg.png);
+  background-size: cover;
+}
+
+.flying {
+  background-image: url(/assets/img/flying-bg.png);
+  background-size: cover;
+}
+
+.ghost {
+  background-image: url(/assets/img/ghost-bg.png);
+  background-size: cover;
+}
+
+.psychic {
+  background-image: url(/assets/img/psychic-bg.png);
+  background-size: cover;
+}
+
+.poison {
+  background-image: url(/assets/img/poison-bg.png);
+  background-size: cover;
+}
+
+.bug {
+  background-image: url(/assets/img/bug-bg.png);
+  background-size: cover;
+}
+
+.rock {
+  background-image: url(/assets/img/rock-bg.png);
+  background-size: cover;
+}
+
+.ground {
+  background-image: url(/assets/img/ground-bg.png);
+  background-size: cover;
+}
+
+.steel {
+  background-image: url(/assets/img/steel-bg.png);
+  background-size: cover;
+}
+
+.fighting {
+  background-image: url(/assets/img/fighting-bg.png);
+  background-size: cover;
+}
+
+.normal {
+  background-image: url(/assets/img/normal-bg.png);
+  background-size: cover;
+}
+
+.fairy {
+  background-image: url(/assets/img/fairy-bg.png);
   background-size: cover;
 }
 
@@ -85,16 +172,19 @@
   justify-content: center;
   padding-inline: 1rem;
 }
+
 .bottom {
   display: flex;
   justify-content: space-between;
   padding-inline: 1rem;
+  padding-block: 0.25rem;
 }
 
 .pokemon-class {
   font-size: 8px;
   font-weight: 600;
 }
+
 .pokemon-name {
   font-weight: 700;
   text-transform: capitalize;
@@ -109,6 +199,7 @@
   color: #b97200;
   font-weight: 700;
 }
+
 .type-icon {
   height: 25px;
   width: 25px;
@@ -121,7 +212,8 @@
   height: 170px;
   border: outset #ffd907 5px;
   justify-content: center;
-  background-image: url(/assets/img/pokemon-bg.png);
+  background-image: url(/assets/img/black-white-sun-rays-pattern-background-creative-vector-design_116849-949.avif);
+  background-size: cover;
 }
 
 .pokemon-image {
@@ -135,7 +227,7 @@
   width: 210px;
   justify-content: center;
   background: rgb(255, 217, 7);
-  background: radial-gradient(circle, rgba(255, 217, 7, 1) 0%, rgba(173, 151, 106, 1) 75%); 
+  background: radial-gradient(circle, rgba(255, 217, 7, 1) 0%, rgba(173, 151, 106, 1) 75%);
   border-left: 4px solid rgba(255, 217, 7, 1);
   border-right: 4px solid rgba(255, 217, 7, 1);
 }
@@ -167,3 +259,25 @@
   font-weight: 700;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #9E9E9E;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EDDE7E;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fecc05ba;
+}
