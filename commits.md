@@ -1,3 +1,100 @@
+### 11/17/2023
+---
+>```
+> commit ed77c3726b145a1f1432980d3290d96fdc1df209 (origin/add-card-background)
+> Author: Charlsjon Angelo Errazo <caerrazo@integranet.ph>
+> Date:   Fri Nov 17 17:04:16 2023 +0800
+>
+>    add background depending on type and some changes in ui texture pack
+>
+>```
+>	new file:   assets/img/4814407.jpg
+>
+>	new file:   "assets/img/Pok\303\251_Ball_icon.svg.png"
+>
+>	new file:   assets/img/bg-pokemon.jpg
+>
+>	new file:   assets/img/black-white-sun-rays-pattern-background-creative-vector-design_116849-949.avif
+>
+>	deleted:    assets/img/bug-bg.jpg
+>
+>	new file:   assets/img/bug-bg.png
+>
+>	deleted:    assets/img/bulbasaur.png
+>
+>	deleted:    assets/img/charizard.png
+>
+>	new file:   assets/img/dark-bg.png
+>
+>	deleted:    assets/img/dragon-bg.jpg
+>
+>	new file:   assets/img/dragon-bg.png
+>
+>	deleted:    assets/img/electric-bg.jpg
+>
+>	new file:   assets/img/electric-bg.png
+>
+>	modified:   assets/img/fairy-bg.png
+>
+>	new file:   assets/img/fighting-bg.png
+>
+>	deleted:    assets/img/fire-bg.jpg
+>
+>	new file:   assets/img/fire-bg.png
+>
+>	modified:   assets/img/flying-bg.png
+>
+>	new file:   assets/img/ghost-bg.png
+>
+>	deleted:    assets/img/grass-bg.jpg
+>
+>	new file:   assets/img/grass-bg.png
+>
+>	new file:   assets/img/ground-bg.png
+>
+>	deleted:    assets/img/ice-bg.jpg
+>
+>	new file:   assets/img/ice-bg.png
+>
+>	new file:   assets/img/normal-bg.png
+>
+>	deleted:    assets/img/normal.png
+>
+>	new file:   assets/img/poison-bg.png
+>
+>	new file:   assets/img/pokemon logo.png
+>
+>	deleted:    assets/img/pokemon-bg.png
+>
+>	new file:   assets/img/psychic-bg.png
+>
+>	deleted:    assets/img/psychic.jpg
+>
+>	new file:   assets/img/rock-bg.png
+>
+>	deleted:    assets/img/squirtle.png
+>
+>	modified:   assets/img/steel-bg.png
+>
+>	deleted:    assets/img/water-bg.jpg
+>
+>	new file:   assets/img/water-bg.png
+>
+>	modified:   css/index.css
+>
+>	modified:   index.html
+>
+>	modified:   js/index.js
+>
+> * html structure is under HTML5 standards
+> * stylesheets is external; import google-fonts
+> * scripts are external
+>
+> Project Lead/Manager's Perspective
+> * Changes in card background texture packed used is from: https://thingonitsown.blogspot.com/2019/01/18-elemental-textures.html
+> * Changes background according to pokemon type
+---
+
 ### 11/16/2023
 ---
 >```
