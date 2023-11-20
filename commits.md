@@ -1,3 +1,26 @@
+### 11/20/2023
+---
+>```
+> commit 208077e10795250403c05b50be59fd42a12d87fc (origin/add-dynamic-moves)
+> Author: Charlsjon Angelo Errazo <caerrazo@integranet.ph>
+> Date:   Mon Nov 20 10:20:07 2023 +0800
+>
+>    add dynamic moves and added some modifications in ui
+>
+>```
+>	modified:   css/index.css
+>
+>	modified:   js/index.js
+>
+> * html structure is under HTML5 standards
+> * stylesheets is external; import google-fonts
+> * scripts are external
+>
+> Project Lead/Manager's Perspective
+> * Dynamic moves are added. Displaying 2 moves only that is randomized
+> * Some changes in UI
+---
+
 ### 11/17/2023
 ---
 >```
