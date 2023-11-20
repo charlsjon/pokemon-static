@@ -28,6 +28,7 @@
   position: sticky;
   top: 0;
   padding-block: 1rem;
+  z-index: 2;
 }
 
 .pokemon-logo {
@@ -162,7 +163,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.15rem
+  gap: 0.15rem;
+  position: relative;
 }
 
 .middle-bottom {
@@ -209,17 +211,39 @@
 .poke-image {
   display: flex;
   width: 100%;
-  height: 170px;
+  height: 175px;
   border: outset #ffd907 5px;
   justify-content: center;
   background-image: url(/assets/img/black-white-sun-rays-pattern-background-creative-vector-design_116849-949.avif);
   background-size: cover;
 }
 
+.button {
+  outline: none;
+  border: none;
+  border: 1px #ebd22f solid;
+  background-color: #ebd22f;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  display: none;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #c3b767;
+}
+
 .pokemon-image {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  cursor: pointer;
+}
+
+.pokemon-image:hover {
+  transform: scale(1.2);
+  transition: 0.8s;
 }
 
 .stats {
@@ -248,6 +272,7 @@
   justify-content: center;
   border-bottom: 2px solid black;
   padding-block: 1rem;
+  text-transform: capitalize;
 }
 
 .ability-name {
