@@ -1,6 +1,26 @@
 ### 11/20/2023
 ---
 >```
+> commit 899ae63b082073a130d8c2dea2fa365da4b40e17 (origin/add-shiny-btn)
+> Author: Charlsjon Angelo Errazo <caerrazo@integranet.ph>
+> Date:   Tue Nov 21 08:42:08 2023 +0800
+>
+>    add button to show shiny pokemon
+>
+>```
+>	modified:   js/index.js
+>
+> * html structure is under HTML5 standards
+> * stylesheets is external; import google-fonts
+> * scripts are external
+>
+> Project Lead/Manager's Perspective
+> * Add button to show shiny pokemon that will appear when hovered to the pokemon image
+---
+
+### 11/20/2023
+---
+>```
 > commit 208077e10795250403c05b50be59fd42a12d87fc (origin/add-dynamic-moves)
 > Author: Charlsjon Angelo Errazo <caerrazo@integranet.ph>
 > Date:   Mon Nov 20 10:20:07 2023 +0800
