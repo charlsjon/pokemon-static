@@ -8,7 +8,7 @@ async function getPokeAPI(){
   
       ggs.json()
       .then( resp => {
-        console.log(resp);
+        // console.log(resp);
         //Capital First Letter
         var name = resp.name;
 
@@ -226,9 +226,14 @@ async function getPokeAPI(){
               </div>
             </main>
             <main class="middle-top">
-              <button class="button shine-btn" id="shiny-btn-`+i+`">SHINY</button>
+              <button class="button shine-btn" id="shiny-btn-`+i+`">
+                <img src="/assets/img/shiny_symbol_pokemon_tdxjdc.webp" class="shiny-logo">
+              </button>
+              <button class="button shine-btn-2">
+                <img src="/assets/img/shiny_symbol_pokemon_tdxjdc.webp" class="shiny-logo">
+              </button>
               <div class="poke-image">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/`+ i + `.svg" alt="" class="pokemon-image" id="pokemon-image-`+ i +`">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/`+ i + `.png" alt="" class="pokemon-image" id="pokemon-image-`+ i +`">
               </div>
               <div class="stats">
                 <p class="species unit">`+ specie + ` Pokemon</p>
@@ -258,61 +263,64 @@ async function getPokeAPI(){
         </main>
       `;
 
-      
-
-      
-
-        //get unique id for button
-        // var buttonNumber = document.querySelectorAll('')
-       
-        var getButton = document.querySelectorAll('.button');
-
 
         cardCounter++
-
-        console.log(cardCounter)
-
 
         if (cardCounter == 100) {
          
           var pokemonImage = document.querySelectorAll('.middle-top');
-          var shineBtn = document.querySelectorAll('.shine-btn')
+          var shineBtn = document.querySelectorAll('.shine-btn');
+          var shineBtn2 = document.querySelectorAll('.shine-btn-2');
+          var portrait = document.querySelectorAll('.pokemon-image');
+          let shiny = false;
+          console.log('shiny check: ', shiny);
 
           for (let z = 0; z < cardCounter; z++) {
-            console.log(pokemonImage[z])
-           
-            pokemonImage[z].addEventListener("mouseover", function(){
-              shineBtn[z].style.display = "flex"
-            })
+            let y = z + 1;
+            // console.log(pokemonImage[z])
+            
+            if(shiny == false){
+              pokemonImage[z].addEventListener("mouseover", function(){
+              shineBtn[z].style.display = "flex";
+              shineBtn[z].style.zIndex = "5";
+              console.log('shiny :', shiny);
+              
+              })
+              pokemonImage[z].addEventListener("mouseout", function () {
+              shineBtn[z].style.display = "none";
+                console.log('shiny :', shiny);
+              })
+            }
 
-            pokemonImage[z].addEventListener("mouseout", function () {
-              shineBtn[z].style.display = "none"
-            })
-        }
-       
+            shineBtn[z].addEventListener("click", ()=>{
         
-          
+              if(shiny == false) {
+             
+                // console.log("test", portrait[z]);
+                portrait[z].setAttribute("src", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/"+y+".png")
+           
+                shineBtn2[z].classList.add('toggle-shiny');
+                shineBtn2[z].style.display = "flex"
+                console.log(shineBtn[z]);  
+                shiny = true;
+                console.log('shiny 1:', shiny);            
+              }
+              else {
+           
+                portrait[z].setAttribute("src", "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/"+y+".png")
+                
+                shineBtn2[z].classList.remove('toggle-shiny');
+                shineBtn2[z].style.display="none"
+                console.log(shineBtn[z]);
+                shiny = false;
+                console.log('shiny 1:', shiny);
+              }
+
+            })
+          }
+          // console.log(shiny);
         }
-        // pokemonImage.forEach((image) => {
-        //   var getShinyBtn = document.getElementById('shiny-btn-' + i);
-        //   var getImage = document.getElementById('pokemon-image-'+ i);
 
-        //   document.querySelectorAll(".shine-btn")[i]
-
-        //   image.addEventListener('mouseover', () => {
-        //     // console.log(getShinyBtn);
-        //     getShinyBtn.style.display = "flex";
-        //   })
-        //   image.addEventListener('mouseout', () => {
-        //     // console.log(getShinyBtn);
-        //     getShinyBtn.style.display = "none";
-        //   })
-        //   getShinyBtn.addEventListener('click', () => {
-        //     // console.log(getImage);
-        //     getImage.setAttribute('src', "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/"+i+".png")
-        //   })
-          
-        // })
       });
   }
 

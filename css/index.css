@@ -221,23 +221,33 @@
 .button {
   outline: none;
   border: none;
-  border: 1px #ebd22f solid;
-  background-color: #ebd22f;
-  padding: 0.15rem 0.5rem;
+  /* border: 2px #ebd22f solid; */
+  background-color: transparent;
+  /* padding: 0.15rem 0.5rem; */
   border-radius: 0.25rem;
   display: none;
   position: absolute;
   top: 8px;
   left: 8px;
   cursor: pointer;
+  z-index: 1;
 }
 .button:hover {
   background-color: #c3b767;
 }
 
+.toggle-shiny{
+  display: flex;
+}
+
+.shine-btn-2{
+  display: none;
+}
+
+
 .pokemon-image {
   display: flex;
-  width: 100px;
+  height: 100%;
   cursor: pointer;
 }
 
