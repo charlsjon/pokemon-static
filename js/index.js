@@ -8,7 +8,7 @@ async function getPokeAPI(){
   
       ggs.json()
       .then( resp => {
-        // console.log(resp);
+        console.log(resp);
         //Capital First Letter
         var name = resp.name;
 
@@ -283,12 +283,12 @@ async function getPokeAPI(){
               pokemonImage[z].addEventListener("mouseover", function(){
               shineBtn[z].style.display = "flex";
               shineBtn[z].style.zIndex = "5";
-              console.log('shiny :', shiny);
+              // console.log('shiny :', shiny);
               
               })
               pokemonImage[z].addEventListener("mouseout", function () {
               shineBtn[z].style.display = "none";
-                console.log('shiny :', shiny);
+                // console.log('shiny :', shiny);
               })
             }
 
@@ -303,7 +303,7 @@ async function getPokeAPI(){
                 shineBtn2[z].style.display = "flex"
                 console.log(shineBtn[z]);  
                 shiny = true;
-                console.log('shiny 1:', shiny);            
+                // console.log('shiny 1:', shiny);            
               }
               else {
            
@@ -313,7 +313,7 @@ async function getPokeAPI(){
                 shineBtn2[z].style.display="none"
                 console.log(shineBtn[z]);
                 shiny = false;
-                console.log('shiny 1:', shiny);
+                // console.log('shiny 1:', shiny);
               }
 
             })
