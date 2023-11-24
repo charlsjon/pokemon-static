@@ -24,7 +24,7 @@ async function getPokeAPI(){
             // console.log("Fire")
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Fire type.ico" alt="">
+              <img src="assets/img/Fire type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -34,7 +34,7 @@ async function getPokeAPI(){
           else if (pokemonType == "grass") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Grass type.ico" alt="">
+              <img src="assets/img/Grass type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -44,7 +44,7 @@ async function getPokeAPI(){
           else if (pokemonType == "water") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Water type.ico" alt="">
+              <img src="assets/img/Water type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -55,7 +55,7 @@ async function getPokeAPI(){
             // console.log("Flying")
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Flying type.ico" alt="">
+              <img src="assets/img/Flying type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -66,7 +66,7 @@ async function getPokeAPI(){
             // console.log("Ghost")
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Ghost type.ico" alt="">
+              <img src="assets/img/Ghost type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -76,7 +76,7 @@ async function getPokeAPI(){
           else if (pokemonType == "psychic") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Psychic type.ico" alt="">
+              <img src="assets/img/Psychic type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -86,7 +86,7 @@ async function getPokeAPI(){
           else if (pokemonType == "poison") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Poison type.ico" alt="">
+              <img src="assets/img/Poison type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -96,7 +96,7 @@ async function getPokeAPI(){
           else if (pokemonType == "electric") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Electric type.ico" alt="">
+              <img src="assets/img/Electric type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -106,7 +106,7 @@ async function getPokeAPI(){
           else if (pokemonType == "bug") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Bug type.ico" alt="">
+              <img src="assets/img/Bug type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -116,7 +116,7 @@ async function getPokeAPI(){
           else if (pokemonType == "rock") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Rock type.ico" alt="">
+              <img src="assets/img/Rock type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -126,7 +126,7 @@ async function getPokeAPI(){
           else if (pokemonType == "ground") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Ground type.ico" alt="">
+              <img src="assets/img/Ground type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -136,7 +136,7 @@ async function getPokeAPI(){
           else if (pokemonType == "steel") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Steel type.ico" alt="">
+              <img src="assets/img/Steel type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -146,7 +146,7 @@ async function getPokeAPI(){
           else if (pokemonType == "fighting") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Fighting type.ico" alt="">
+              <img src="assets/img/Fighting type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -156,7 +156,7 @@ async function getPokeAPI(){
           else if (pokemonType == "normal") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Normal type.ico" alt="">
+              <img src="assets/img/Normal type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -166,7 +166,7 @@ async function getPokeAPI(){
           else if (pokemonType == "fairy") {
             typeHTML += `
             <div class="type-icon">
-              <img src="/assets/img/Fairy type.ico" alt="">
+              <img src="assets/img/Fairy type.ico" alt="">
             </div>
           `
             eachTypeHTML += `
@@ -227,10 +227,10 @@ async function getPokeAPI(){
             </main>
             <main class="middle-top">
               <button class="button shine-btn" id="shiny-btn-`+i+`">
-                <img src="/assets/img/shiny_symbol_pokemon_tdxjdc.webp" class="shiny-logo">
+                <img src="assets/img/shiny_symbol_pokemon_tdxjdc.webp" class="shiny-logo">
               </button>
               <button class="button shine-btn-2">
-                <img src="/assets/img/shiny_symbol_pokemon_tdxjdc.webp" class="shiny-logo">
+                <img src="assets/img/shiny_symbol_pokemon_tdxjdc.webp" class="shiny-logo">
               </button>
               <div class="poke-image">
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/`+ i + `.png" alt="" class="pokemon-image" id="pokemon-image-`+ i +`">
