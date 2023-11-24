@@ -59,77 +59,77 @@
 }
 
 .fire {
-  background-image: url('assets/img/fire-bg.png');
+  background-image: url('../assets/img/fire-bg.png');
   background-size: cover;
 }
 
 .grass {
-  background-image: url('assets/img/grass-bg.png');
+  background-image: url('../assets/img/grass-bg.png');
   background-size: cover;
 }
 
 .water {
-  background-image: url('assets/img/water-bg.png');
+  background-image: url('../assets/img/water-bg.png');
   background-size: cover;
 }
 
 .electric {
-  background-image: url('assets/img/electric-bg.png');
+  background-image: url('../assets/img/electric-bg.png');
   background-size: cover;
 }
 
 .flying {
-  background-image: url('assets/img/flying-bg.png');
+  background-image: url('../assets/img/flying-bg.png');
   background-size: cover;
 }
 
 .ghost {
-  background-image: url('assets/img/ghost-bg.png');
+  background-image: url('../assets/img/ghost-bg.png');
   background-size: cover;
 }
 
 .psychic {
-  background-image: url('assets/img/psychic-bg.png');
+  background-image: url('../assets/img/psychic-bg.png');
   background-size: cover;
 }
 
 .poison {
-  background-image: url('assets/img/poison-bg.png');
+  background-image: url('../assets/img/poison-bg.png');
   background-size: cover;
 }
 
 .bug {
-  background-image: url('assets/img/bug-bg.png');
+  background-image: url('../assets/img/bug-bg.png');
   background-size: cover;
 }
 
 .rock {
-  background-image: url('assets/img/rock-bg.png');
+  background-image: url('../assets/img/rock-bg.png');
   background-size: cover;
 }
 
 .ground {
-  background-image: url('assets/img/ground-bg.png');
+  background-image: url('../assets/img/ground-bg.png');
   background-size: cover;
 }
 
 .steel {
-  background-image: url('assets/img/steel-bg.png');
+  background-image: url('../assets/img/steel-bg.png');
   background-size: cover;
 }
 
 .fighting {
-  background-image: url('assets/img/fighting-bg.png');
+  background-image: url('../assets/img/fighting-bg.png');
   background-size: cover;
 }
 
 .normal {
-  background-image: url('assets/img/normal-bg.png');
+  background-image: url('../assets/img/normal-bg.png');
   background-size: cover;
 }
 
 .fairy {
-  background-image: url('assets/img/fairy-bg.png');
+  background-image: url('../assets/img/fairy-bg.png');
   background-size: cover;
 }
 
@@ -214,7 +214,7 @@
   height: 175px;
   border: outset #ffd907 5px;
   justify-content: center;
-  background-image: url(assets/img/black-white-sun-rays-pattern-background-creative-vector-design_116849-949.avif);
+  background-image: url(../assets/img/black-white-sun-rays-pattern-background-creative-vector-design_116849-949.avif);
   background-size: cover;
 }
 
