@@ -1,3 +1,26 @@
+### 11/22/2023
+---
+>```
+> commit cadd16617a07c6f76db4d9e5718d7086160e46f9 (origin/show-shiny-version)
+> Author: Charlsjon Angelo Errazo <caerrazo@integranet.ph>
+> Date:   Wed Nov 22 09:59:50 2023 +0800
+>
+>    show shiny version
+>
+>```
+>	new file:   assets/img/shiny_symbol_pokemon_tdxjdc.webp
+>	modified:   css/index.css
+> modified:   js/index.js
+>
+> * html structure is under HTML5 standards
+> * stylesheets is external; import google-fonts
+> * scripts are external
+>
+> Project Lead/Manager's Perspective
+> * Clicking the button will show shiny version of the pokemon
+> * Change the button into icon
+---
+
 ### 11/20/2023
 ---
 >```
